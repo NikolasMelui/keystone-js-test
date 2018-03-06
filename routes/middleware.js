@@ -19,7 +19,7 @@ var _ = require('lodash');
 */
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
-		{ label: 'На глагне', key: 'home', href: '/' },
+		{ label: 'На глагне', key: 'home', href: '/' }, // сюда можно записать другие элементы - это массив (куски меню)
 	];
 	res.locals.user = req.user;
 	next();
